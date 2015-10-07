@@ -1,0 +1,28 @@
+---
+---
+{{ reference }}
+
+<div id="{{key}}-materials">
+  {% if entry.abstract %}
+   <button type="button" class="btn" onclick="tg('{{key}}-abstract')">Abstract</button>
+  {% endif %}
+   <button type="button" class="btn" onclick="tg('{{key}}-bibtex')">BibTeX</button>
+  {% if entry.doi %}
+   <a href="http://dx.doi.org/{{entry.doi}}" target="_blank"><button type="button" class="btn">DOI-link</button></a>
+  {% endif %}
+  {% if entry.language %}
+   <a href="/downloads/previews/{{key}}.pdf"><button type="button" class="btn">Preprint</button></a>
+  {% endif %}
+  {% if entry.school %}
+   <a href="/downloads/previews/{{key}}.pdf"><button type="button" class="btn">Download</button></a>
+  {% endif %}
+
+  {% if entry.abstract %}
+  <div id="{{key}}-abstract" class="bib" style="display: none;">
+    <div class="panel-body">
+      {{entry.abstract}}
+    </div>
+  </div>
+  {% endif %}
+  <pre id="{{key}}-bibtex" class="bib" style="display: none; overflow:auto;">{{entry.bibtex}}</pre>
+</div>

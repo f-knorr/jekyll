@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+<!--script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"-->
+<script type="text/javascript">
+function decode(a) {
+ return a.replace(/[a-zA-Z]/g, function(c){
+  return String.fromCharCode(((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13)) ? c : c - 26);
+  })
+};
+
+function sendto() {
+    return "<a href='"+decode('znvygb:sybevnaxabee@jro.qr')+"'>"+decode('sybevnaxabee@jro.qr')+"</a>";
+}
+
+function tg(a){
+var e=document.getElementById(a);
+if(!e)return true;
+if(e.style.display=="none")e.style.display="block";
+else e.style.display="none";
+return true;}</script>
+<style>
+.btn {
+  color: #ffffff;
+  padding:1px;
+  background: #3498db;
+  text-decoration: none;
+  border: none;
+}
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+.bib { border: solid thin grey; padding: .5em;}
+</style>
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <!-- a href="{{ site.baseurl }}/blog">Blog</a -->
+            <a href="{{ site.baseurl }}/publications">Publications</a>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</script>
+</html>
