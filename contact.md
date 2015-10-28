@@ -16,7 +16,6 @@ The key's ID: `0xAA5CA1CA`
 The key's fingerprint: `B23F 639E 39B3 5E3B 9A21 3111 8327 16A7 AA5C A1CA`  
 
 	-----BEGIN PGP PUBLIC KEY BLOCK-----
-	Version: GnuPG v1
 
 	mQINBFT6EYoBEACsIdxbBXYtmlYEAutUkRwBG6+F8kUa7c+moEV/hZiZmJ7MqNWi
 	xhu3fydeQ7SUmgZKjbwexawN6mPo/MOKNKkhG1U4jLmfRd05aYZkPeV6vbCaMj+H
