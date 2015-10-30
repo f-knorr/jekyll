@@ -4,7 +4,7 @@ title: Contact Florian Knorr
 image:
 permalink: /contact/
 ---
-To contact Florian Knorr, please write to
+To contact me, please write to
 <span id="sendto"><button type="button" 
         class="btn" 
         onclick="document.getElementById('sendto').innerHTML=sendto();">my e-mail adress</button></span>.
