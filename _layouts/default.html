@@ -26,8 +26,14 @@ function sendto() {
 function tg(a){
  var e = document.getElementById(a);
  if(!e)return true;
- if(e.style.display=="none")e.style.display="block";
- else e.style.display="none";
+ if(e.style.display=="none"){
+   var b = document.getElementById(a+"-btn");
+   b.style.backgroundColor="#1d6fa5";
+   e.style.display="block";}
+ else {
+   var b = document.getElementById(a+"-btn");
+   b.style.backgroundColor="#3498db";
+   e.style.display="none";}
  return true;}</script>
 <style>
 .btn {

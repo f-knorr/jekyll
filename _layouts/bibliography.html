@@ -4,9 +4,9 @@
 
 <div id="{{key}}-materials">
   {% if entry.abstract %}
-   <button type="button" class="btn" onclick="tg('{{key}}-abstract')">Abstract</button>
+   <button type="button" class="btn" id="{{key}}-abstract-btn" onclick="tg('{{key}}-abstract')">Abstract</button>
   {% endif %}
-   <button type="button" class="btn" onclick="tg('{{key}}-bibtex')">BibTeX</button>
+   <button type="button" class="btn" id="{{key}}-bibtex-btn" onclick="tg('{{key}}-bibtex')">BibTeX</button>
   {% if entry.doi %}
    <a href="http://dx.doi.org/{{entry.doi}}" target="_blank"><button type="button" class="btn">DOI-link</button></a>
   {% endif %}
