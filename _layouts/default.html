@@ -28,27 +28,13 @@ function tg(a){
  if(!e)return true;
  if(e.style.display=="none"){
    var b = document.getElementById(a+"-btn");
-   b.style.backgroundColor="#1d6fa5";
+   b.className="btn-click";
    e.style.display="block";}
  else {
    var b = document.getElementById(a+"-btn");
-   b.style.backgroundColor="#3498db";
+   b.className="btn";
    e.style.display="none";}
  return true;}</script>
-<style>
-.btn {
-  color: #ffffff;
-  padding:2px;
-  background: #3498db;
-  text-decoration: none;
-  border: none;
-}
-.btn:hover {
-  background: #3cb0fd;
-  text-decoration: none;
-}
-.bib { border: solid thin grey; padding: .5em;}
-</style>
 </head>
   <body>
     <div class="wrapper-masthead">
