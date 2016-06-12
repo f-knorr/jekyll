@@ -7,7 +7,7 @@ permalink: /contact/
 To contact me, please write to
 <span id="sendto"><button type="button" 
         class="btn" 
-        onclick="document.getElementById('sendto').innerHTML=sendto();">my e-mail adress</button></span>.
+        onclick="document.getElementById('sendto').innerHTML=sendto();">my e-mail address</button></span>.
 
 If you use GnuPG/PGP (and I recommend you to do so), you can send me an encrypted e-mail.  
 Therefore, please [download my public key](/downloads/public-gpg-key-florianknorr-web-de.asc).
