@@ -302,6 +302,11 @@ footer {
   border: none;
 }
 
+.seal {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
 .bib { border: solid thin grey; padding: .5em;}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
