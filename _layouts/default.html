@@ -18,7 +18,6 @@ function decode(a) {
 function sendto() {
     return "<a href='"+decode('znvygb:sybevnaxabee@jro.qr')+"'>"+decode('sybevnaxabee@jro.qr')+"</a>";
 }
-
 function tg(a){
  var e = document.getElementById(a);
  if(!e)return true;
@@ -27,9 +26,9 @@ function tg(a){
    for (var i=0, max=all.length; i < max; i++) {
      all[i].style.display="none";
    }
-   var a = document.getElementsByClassName("btn-click");
-   for (var i=0, max=a.length; i < max; i++) {
-     a[i].className="btn";
+   var all = document.getElementsByClassName("btn-click");
+   for (var i=0, max=all.length; i < max; i++) {
+     all[i].className="btn";
    }
    var b = document.getElementById(a+"-btn");
    b.className="btn-click";
