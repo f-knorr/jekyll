@@ -5,10 +5,6 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"-->
@@ -27,6 +23,14 @@ function tg(a){
  var e = document.getElementById(a);
  if(!e)return true;
  if(e.style.display=="none"){
+   var all = document.getElementsByClassName("bib");
+   for (var i=0, max=all.length; i < max; i++) {
+     all[i].style.display="none";
+   }
+   var a = document.getElementsByClassName("btn-click");
+   for (var i=0, max=a.length; i < max; i++) {
+     a[i].className="btn";
+   }
    var b = document.getElementById(a+"-btn");
    b.className="btn-click";
    e.style.display="block";}
@@ -34,7 +38,8 @@ function tg(a){
    var b = document.getElementById(a+"-btn");
    b.className="btn";
    e.style.display="none";}
- return true;}</script>
+ return true;}
+</script>
 </head>
   <body>
     <div class="wrapper-masthead">
@@ -68,7 +73,6 @@ function tg(a){
       </div>
     </div>
 
-    {% include analytics.html %}
+<!--    {% include analytics.html %}-->
   </body>
-</script>
 </html>

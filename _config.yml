@@ -54,7 +54,7 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: ["footnotes", "no_intra_emphasis", "strikethrough", "space_after_headers", "superscript", "highlight", "smart"]
 highlighter: pygments
@@ -68,10 +68,10 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
-gems: ['jekyll/scholar']
+plugins: ['jekyll/scholar']
 
 scholar:
   style: _bibliography/elsevier-harvard.csl
