@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 **ORCID ID**: [0000-0002-1568-5618](http://orcid.org/0000-0002-1568-5618)  
-**ResearcherID**: [J-3557-2013](http://www.researcherid.com/rid/J-3557-2013)
+**ResearcherID**: [J-3557-2013](https://www.webofscience.com/wos/author/record/J-3557-2013)
 
 ----
 
